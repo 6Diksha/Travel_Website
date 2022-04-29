@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <title>Weintellect</title>
+  </head>
+  <style>
+    .navbar {
+      width: 85%;
+      margin: auto;
+      padding: 40px;
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+    }
+    .navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+    }
+    body {
+      background-image: url("3.jpg");
+      background-size: cover;
+    }
+    img {
+      width: 200px;
+      object-fit: cover;
+      position: relative;
+      border-radius: 10%;
+    }
+    .button:hover {
+      background-color: black;
+      color: aliceblue;
+    }
+    a.menu {
+      color: black;
+      text-transform: uppercase;
+      position: relative;
+    }
+    a.menu::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 0;
+      background: rgb(65, 37, 158);
+      left: 0;
+      bottom: -5;
+      transition: 1s;
+    }
+    a.menu:hover::after {
+      width: 100%;
+    }
+    a {
+      text-decoration: none;
+      color: slategray;
+    }
+    .button {
+      padding: 10px;
+      margin: 10px;
+      background-color: bisque;
+      color: slategray;
+      border-color: black;
+      cursor: grab;
+      border-radius: 10px;
+    }
+    .content {
+      width: 100%;
+      position: absolute;
+      top: 60%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+    h1 {
+      color: rgb(4, 1, 12);
+      text-decoration-line: underline;
+    }
+
+    p {
+      color: bisque;
+      font-size: large;
+    }
+  </style>
+  <body>
+    <div class="banner">
+      <div class="navbar">
+        <img src="logo.jpg" alt="logo" />
+        <ul>
+          <li><a class="menu" href="#">Hidden gems</a></li>
+          <li><a class="menu" href="mailto:weintellect@gmail.com">email</a></li>
+          <li><a class="menu" href="tel:+91-9999999999">contact us</a></li>
+          <li><a class="menu" href="#">login</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>CHOOSE YOUR DESTINATION</h1>
+        <p>Explore Delhi with these amazing places.<br />Some highlights:</p>
+        <div>
+          <button class="button">
+            <a href="#">RED FORT</a>
+          </button>
+          <button class="button">
+            <a href="#">INDIA GATE</a>
+          </button>
+          <button class="button">
+            <a href="#">AKSHARDHAM TEMPLE</a>
+          </button>
+          <button class="button">
+            <a href="#">LAKSHMI TEMPLE</a>
+          </button>
+          <button class="button">
+            <a href="#">NEHRU PLANETERIUM</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
